@@ -1,4 +1,3 @@
-//api.openweathermap.org/data/2.5/weather?q=dhaka&appid=97e4417df9806e68fd985b28509828be
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import WeatherCard from "./WeatherCard";
