@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import WeatherCard from "./WeatherCard";
-require("dotenv").config();
-console.log(process.env.REACT_APP_WEATHER_API_KEY);
 
 export default function Temp() {
   const [searchValue, setSearchValue] = useState("chittagong");
@@ -37,9 +35,9 @@ export default function Temp() {
     }
   };
 
-  useEffect(() => {
-    getWeatherInfo();
-  }, []);
+  // useEffect(() => {
+  //   getWeatherInfo();
+  // }, []);
   return (
     <>
       <div className="wrap">
